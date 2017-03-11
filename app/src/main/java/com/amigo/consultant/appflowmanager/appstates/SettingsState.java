@@ -5,10 +5,10 @@ import android.os.Bundle;
 import com.amigo.consultant.statemanager.BaseAppState;
 
 /**
- * Created by skaribasappa on 3/4/2017.
+ * Created by skaribasappa on 3/11/2017.
  */
-public class WelcomeState extends BaseAppState {
-    public static String IDENTIFIER = "WelcomeState";
+public class SettingsState extends BaseAppState {
+    public static String IDENTIFIER = "SettingsState";
 
     @Override
     public void reEnter() {

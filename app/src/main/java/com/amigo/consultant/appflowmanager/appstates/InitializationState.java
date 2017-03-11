@@ -24,4 +24,14 @@ public class InitializationState extends BaseAppState {
     public void onExit() {
 
     }
+
+    @Override
+    public String getIdentifier() {
+        return IDENTIFIER;
+    }
+
+    @Override
+    public void handleExternalEvent(String event) {
+
+    }
 }

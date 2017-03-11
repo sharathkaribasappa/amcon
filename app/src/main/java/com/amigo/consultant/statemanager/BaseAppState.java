@@ -13,4 +13,7 @@ public abstract class BaseAppState {
 
     public abstract void onExit();
 
+    public abstract String getIdentifier();
+
+    public abstract void handleExternalEvent(String event);
 }
