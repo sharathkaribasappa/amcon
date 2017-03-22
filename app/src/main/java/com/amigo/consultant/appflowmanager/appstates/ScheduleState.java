@@ -11,7 +11,7 @@ public class ScheduleState extends BaseAppState {
     public static String IDENTIFIER = "ScheduleState";
 
     @Override
-    public void reEnter() {
+    public void reEnter(String event, Bundle data) {
 
     }
 

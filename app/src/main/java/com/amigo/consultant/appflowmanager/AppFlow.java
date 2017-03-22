@@ -86,7 +86,11 @@ public class AppFlow {
     }
 
     private void addTransition(String fromState, String event, String toState) {
-        mTransitions.put(event,fromState);
+        mTransitions.put(event + "_" + fromState,toState);
+    }
+
+    public String getStateTransition(String event) {
+        return mTransitions.get(event);
     }
 
     public StateManager getStateManager() {

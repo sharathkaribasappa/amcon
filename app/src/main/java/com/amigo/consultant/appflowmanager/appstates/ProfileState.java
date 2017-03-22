@@ -11,7 +11,7 @@ public class ProfileState extends BaseAppState{
     public static String IDENTIFIER = "ProfileState";
 
     @Override
-    public void reEnter() {
+    public void reEnter(String event, Bundle data) {
 
     }
 

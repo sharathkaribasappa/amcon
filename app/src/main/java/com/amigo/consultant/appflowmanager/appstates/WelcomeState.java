@@ -11,7 +11,7 @@ public class WelcomeState extends BaseAppState {
     public static String IDENTIFIER = "WelcomeState";
 
     @Override
-    public void reEnter() {
+    public void reEnter(String event, Bundle data) {
 
     }
 

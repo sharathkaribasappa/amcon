@@ -11,7 +11,7 @@ public class PermissionsState extends BaseAppState {
     public static String IDENTIFIER = "PermissionsState";
 
     @Override
-    public void reEnter() {
+    public void reEnter(String event, Bundle data) {
 
     }
 

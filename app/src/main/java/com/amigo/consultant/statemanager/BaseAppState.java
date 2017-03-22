@@ -7,7 +7,7 @@ import android.os.Bundle;
  */
 public abstract class BaseAppState {
 
-    public abstract void reEnter();
+    public abstract void reEnter(String event, Bundle data);
 
     public abstract void onEnter(String event, Bundle data);
 

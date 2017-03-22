@@ -11,7 +11,7 @@ public class NotificationsState extends BaseAppState {
     public static String IDENTIFIER = "NotificationsState";
 
     @Override
-    public void reEnter() {
+    public void reEnter(String event, Bundle data) {
 
     }
 

@@ -16,7 +16,7 @@ public class CalendarState extends BaseAppState {
     }
 
     @Override
-    public void reEnter() {
+    public void reEnter(String event, Bundle data) {
 
     }
 

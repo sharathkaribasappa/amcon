@@ -11,7 +11,7 @@ public class NewCalendarEventState extends BaseAppState {
     public static String IDENTIFIER = "NewCalendarEventState";
 
     @Override
-    public void reEnter() {
+    public void reEnter(String event, Bundle data) {
 
     }
 

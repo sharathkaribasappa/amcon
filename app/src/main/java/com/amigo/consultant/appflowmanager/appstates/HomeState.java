@@ -11,7 +11,7 @@ public class HomeState extends BaseAppState {
     public static String IDENTIFIER = "HomeState";
 
     @Override
-    public void reEnter() {
+    public void reEnter(String event, Bundle data) {
 
     }
 

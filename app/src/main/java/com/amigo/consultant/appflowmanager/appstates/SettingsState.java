@@ -11,7 +11,7 @@ public class SettingsState extends BaseAppState {
     public static String IDENTIFIER = "SettingsState";
 
     @Override
-    public void reEnter() {
+    public void reEnter(String event, Bundle data) {
 
     }
 

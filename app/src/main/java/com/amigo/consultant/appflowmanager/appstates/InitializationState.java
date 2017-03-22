@@ -11,7 +11,7 @@ public class InitializationState extends BaseAppState {
     public static String IDENTIFIER = "InitializationState";
 
     @Override
-    public void reEnter() {
+    public void reEnter(String event, Bundle data) {
 
     }
 
