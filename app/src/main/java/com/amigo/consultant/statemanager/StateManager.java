@@ -12,8 +12,8 @@ public abstract class StateManager {
 
     public Context mContext;
 
-    BaseAppState mCurrentState = null;
-    BaseAppState mPreviousState = null;
+    private BaseAppState mCurrentState = null;
+    private BaseAppState mPreviousState = null;
 
     public StateManager(Context context) {
         mContext = context;
@@ -24,6 +24,7 @@ public abstract class StateManager {
         BaseAppState state = AppFlow.getInstance().getStateManager().getStateByIdentifier(stateIdentifier);
 
         boolean isSelfTransition = (state == mCurrentState ? true : false);
+
         if(isSelfTransition) {
             mCurrentState.reEnter(event, data);
         } else {
@@ -33,6 +34,7 @@ public abstract class StateManager {
             //exit from the previous state
             if(mPreviousState != null) {
                 mPreviousState.onExit();
+                mPreviousState.clean();
             }
 
             //enter the new state
